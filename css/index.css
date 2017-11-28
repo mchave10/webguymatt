@@ -1,0 +1,28 @@
+body {
+  background-color: #383838;
+  color: #FFFFFF;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 21px; }
+
+.topSection {
+  padding-top: 10%;
+  max-height: 100%; }
+
+.topSection h1, .topSection h2 {
+  position: relative;
+  font-size: 5em;
+  line-height: 1.2em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0; }
+.topSection .topArrowWrap {
+  position: relative; }
+  .topSection .topArrowWrap .scrollDwnFrmTop {
+    position: relative; }
+
+@media (max-width: 800px) {
+  body {
+    font-size: 12px; } }
+
+/*# sourceMappingURL=index.css.map */

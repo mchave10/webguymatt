@@ -1,4 +1,4 @@
-$main-bgcolor: #292929;
+$main-bgcolor: #222222;
 $main-color: #FFFFFF;
 $main-font: 'Montserrat', sans-serif;
 
@@ -10,44 +10,46 @@ body {
     line-height: 21px;
 }
 
-.topSection {
-    padding-top:2%;   
-    max-height:100%;
-}
-
-.topSection {
-
-    h1,h2 {
-        position:relative; 
-        font-size: 4em;
-        line-height: 1.2em;
-        font-weight: 700;
-        margin:0;
-        padding:0;
-        animation-duration: 0.5s;
-        animation-delay: 0.5s;
-        -moz-animation-duration: 0.5s;
-        -wekit-animation-duration: 0.5s;
-         -moz-animation-delay: 0.5s;
-        -webkit-animation-delay: 0.5s;
+.topSection { 
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    
+    .topCtaHolder {
+        position: absolute;
+        max-width: 510px;
+        width: 80%;
+        height:70%;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        display: inline-block;
+        vertical-align: middle;
     }
     
     .topMainImg {
-        max-width:560px; 
-        width:90%;
+        position: relative;
+        max-width: 510px;
+        width: 100%;
         animation-duration: 0.8s;
         animation-delay: 0.8s;
         -moz-animation-duration: 0.8s;
         -wekit-animation-duration: 0.8s;
-         -moz-animation-delay: 0.8s;
+        -moz-animation-delay: 0.8s;
         -webkit-animation-delay: 0.8s;
     }
     
-
     .scrollDwnFrmTop {
         position:relative;   
-        max-width: 100px;
-        margin-top:2em;
+        max-width: 80px;
+        width:90%;
+        margin: auto;
+        right: 0;
+        left: 0;
+        margin-top:10%;
         
     }
     
@@ -92,6 +94,22 @@ body {
     /*arrow homebouncearrow end*/
     
 }
+
+
+h1,h2 {
+        position:relative; 
+        font-size: 4em;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin:0;
+        padding:0;
+        animation-duration: 0.5s;
+        animation-delay: 0.5s;
+        -moz-animation-duration: 0.5s;
+        -wekit-animation-duration: 0.5s;
+         -moz-animation-delay: 0.5s;
+        -webkit-animation-delay: 0.5s;
+    }
 
 @media(max-width:800px) {
     body {

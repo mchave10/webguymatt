@@ -35,12 +35,22 @@ body {
     -webkit-animation-delay: 0.8s; }
   .topSection .scrollDwnFrmTop {
     position: relative;
-    max-width: 80px;
-    width: 90%;
+    max-width: 100px;
+    width: 100%;
     margin: auto;
     right: 0;
     left: 0;
-    margin-top: 10%; }
+    margin-top: 20%;
+    animation-duration: 1.3s;
+    animation-delay: 1.3s;
+    -moz-animation-duration: 1.3s;
+    -wekit-animation-duration: 1.3s;
+    -moz-animation-delay: 1.3s;
+    -webkit-animation-delay: 1.3s; }
+    .topSection .scrollDwnFrmTop img {
+      position: relative;
+      width: 100%;
+      max-width: 100px; }
   .topSection .mattbouncearrow {
     -webkit-animation: homebouncearrow 2s infinite;
     animation: homebouncearrow 2s infinite; }

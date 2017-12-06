@@ -5,24 +5,65 @@ body {
   font-size: 16px;
   line-height: 21px; }
 
+.navbar {
+  position: absolute;
+  border-left: none;
+  border-right: none;
+  border-radius: 0px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 1000;
+  background-color: #222222;
+  color: #FFFFFF; }
+  .navbar .logo {
+    position: relative;
+    max-width: 300px;
+    width: 100%;
+    display: block;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  .navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+    vertical-align: top; }
+  .navbar .navbar-collapse {
+    text-align: center; }
+  .navbar #navmain a {
+    color: #FFFFFF;
+    font-size: 1.3em; }
+  .navbar #navmain a:hover {
+    color: #bababa; }
+
 .topSection {
   position: relative;
   width: 100%;
   min-height: 100vh;
   text-align: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  align-items: center;
   /*arrow homebouncearrow end*/ }
   .topSection .topCtaHolder {
     position: absolute;
     max-width: 510px;
     width: 80%;
-    height: 70%;
+    height: 63%;
+    padding: 10px;
     margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    display: inline-block;
-    vertical-align: middle; }
+    right: 0;
+    bottom: 0px;
+    top: 0px;
+    box-sizing: border-box; }
   .topSection .topMainImg {
     position: relative;
     max-width: 510px;
@@ -35,12 +76,12 @@ body {
     -webkit-animation-delay: 0.8s; }
   .topSection .scrollDwnFrmTop {
     position: relative;
-    max-width: 100px;
+    max-width: 80px;
     width: 100%;
     margin: auto;
     right: 0;
     left: 0;
-    margin-top: 20%;
+    margin-top: 13%;
     animation-duration: 1.3s;
     animation-delay: 1.3s;
     -moz-animation-duration: 1.3s;
@@ -101,10 +142,20 @@ h1, h2 {
   -moz-animation-delay: 0.5s;
   -webkit-animation-delay: 0.5s; }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
   body {
     font-size: 12px;
     line-height: 16px; } }
+@media (max-width: 767px) {
+  .navbar .logo {
+    max-width: 200px;
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-bottom: 0px; }
+
+  .topSection .scrollDwnFrmTop img {
+    max-width: 50px; } }
 @media (max-width: 500px) {
   body {
     font-size: 10px;

@@ -10,7 +10,7 @@ body {
     font-size:16px;
     line-height: 21px;
     overflow-y: hidden;
-    
+    overflow-x: hidden;   
 }
 
 .navbar {
@@ -45,7 +45,6 @@ body {
         position: relative;
         max-width: 170px;
         width:100%;
-        margin-left:15px;
         padding-top: 15px;
         padding-bottom: 5px;
         float:left;
@@ -155,6 +154,7 @@ body {
     }
     
     .mattbouncearrow {
+        cursor: pointer;
         -webkit-animation: homebouncearrow 2s infinite;
         animation: homebouncearrow 2s infinite;   
     }
@@ -194,6 +194,36 @@ body {
 
     /*arrow homebouncearrow end*/
     
+}
+
+#aboutMe { 
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    text-align: center;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	-webkit-box-align: center;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+	align-items: center;
+    display:none;
+    
+    .taxi {
+        position:absolute;
+        top:0;
+        right:0;
+        left:0;
+        bottom:0;
+        margin:auto;
+        max-width: 1200px;
+        width:90%;
+    }
 }
 
 
@@ -245,6 +275,26 @@ h1,h2 {
             }
         }
     }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $main-bgcolor; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #1171dc; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #137aad; 
 }
 
 @media(max-width:500px) {

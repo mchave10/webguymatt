@@ -1,5 +1,5 @@
 body {
-  background-color: #222222;
+  background-color: #232323;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -7,28 +7,32 @@ body {
 
 .navbar {
   position: absolute;
-  border-left: none;
-  border-right: none;
+  border: none;
+  border-bottom: 1px solid #FFFFFF;
   border-radius: 0px;
   left: 0;
   right: 0;
   text-align: center;
-  z-index: 1000;
-  background-color: #222222;
-  color: #FFFFFF; }
+  z-index: 1200;
+  background-color: #232323;
+  color: #FFFFFF;
+  padding-top: 5px; }
   .navbar .logo {
     position: relative;
-    max-width: 300px;
+    max-width: 170px;
     width: 100%;
-    display: block;
+    margin-left: 15px;
     padding-top: 15px;
-    padding-bottom: 15px; }
+    padding-bottom: 5px;
+    float: left;
+    display: inline-block;
+    vertical-align: top; }
   .navbar .navbar-nav {
     display: inline-block;
-    float: none;
-    vertical-align: top; }
+    vertical-align: top;
+    float: none; }
   .navbar .navbar-collapse {
-    text-align: center; }
+    text-align: left; }
   .navbar #navmain a {
     color: #FFFFFF;
     font-size: 1.3em; }
@@ -64,16 +68,23 @@ body {
     bottom: 0px;
     top: 0px;
     box-sizing: border-box; }
+  .topSection .buildingsilo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    right: 0; }
   .topSection .topMainImg {
     position: relative;
-    max-width: 510px;
+    max-width: 190px;
     width: 100%;
     animation-duration: 0.8s;
     animation-delay: 0.8s;
     -moz-animation-duration: 0.8s;
     -wekit-animation-duration: 0.8s;
     -moz-animation-delay: 0.8s;
-    -webkit-animation-delay: 0.8s; }
+    -webkit-animation-delay: 0.8s;
+    z-index: 1000; }
   .topSection .scrollDwnFrmTop {
     position: relative;
     max-width: 80px;

@@ -1,4 +1,4 @@
-$main-bgcolor: #222222;
+$main-bgcolor: #232323;
 $main-color: #FFFFFF;
 $main-font: 'Montserrat', sans-serif;
 $hover-color: #bababa;
@@ -14,32 +14,35 @@ body {
 
 .navbar {
     position:absolute;
-    border-left:none;
-    border-right:none;
+    border:none;
+    border-bottom: 1px solid #FFFFFF;
     border-radius: 0px;
     left:0;
     right:0;
     text-align: center;
-    z-index: 1000;
+    z-index: 1200;
     background-color: $main-bgcolor; 
     color: $main-color;
+    padding-top:5px;
     
     .logo {
-        
         position: relative;
-        max-width: 300px;
-        width: 100%;
-        display: block;
+        max-width: 170px;
+        width:100%;
+        margin-left:15px;
         padding-top: 15px;
-        padding-bottom:15px;
+        padding-bottom: 5px;
+        float:left;
+        display:inline-block;
+        vertical-align: top;
     }
     .navbar-nav {
       display: inline-block;
-      float: none;
       vertical-align: top;
+        float:none;
 }
     .navbar-collapse {
-      text-align: center;
+      text-align: left;
     }
     
     #navmain {
@@ -88,9 +91,17 @@ body {
         
     }
     
+    .buildingsilo {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        left:0;
+        right:0;
+    }
+    
     .topMainImg {
         position: relative;
-        max-width: 510px;
+        max-width: 190px;
         width: 100%;
         animation-duration: 0.8s;
         animation-delay: 0.8s;
@@ -98,7 +109,9 @@ body {
         -wekit-animation-duration: 0.8s;
         -moz-animation-delay: 0.8s;
         -webkit-animation-delay: 0.8s;
+        z-index:1000;
     }
+    
     
     .scrollDwnFrmTop {
         position:relative;   

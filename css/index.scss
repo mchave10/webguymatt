@@ -1,4 +1,4 @@
-$main-bgcolor: #232323;
+$main-bgcolor: #1a1a1a;
 $main-color: #FFFFFF;
 $main-font: 'Montserrat', sans-serif;
 $hover-color: #bababa;
@@ -61,7 +61,7 @@ body {
 .topSection { 
     position: relative;
     width: 100%;
-    min-height: 100vh;
+    min-height: 90vh;
     text-align: center;
     display: -ms-flexbox;
 	display: -webkit-flex;
@@ -73,9 +73,18 @@ body {
     bottom: 0;
     right: 0;
     left: 0;
-
 	align-items: center;
-    
+   
+    .buildingsilo {
+        position:absolute;
+        bottom:0;
+        width:100%;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 20%;
+        top: 0px;
+    }
     .topCtaHolder {
         position: absolute;
         max-width: 510px;
@@ -91,13 +100,7 @@ body {
         
     }
     
-    .buildingsilo {
-        position:absolute;
-        bottom:0;
-        width:100%;
-        left:0;
-        right:0;
-    }
+    
     
     .topMainImg {
         position: relative;

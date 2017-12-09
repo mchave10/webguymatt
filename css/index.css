@@ -1,5 +1,5 @@
 body {
-  background-color: #232323;
+  background-color: #1a1a1a;
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -14,7 +14,7 @@ body {
   right: 0;
   text-align: center;
   z-index: 1200;
-  background-color: #232323;
+  background-color: #1a1a1a;
   color: #FFFFFF;
   padding-top: 5px; }
   .navbar .logo {
@@ -42,7 +42,7 @@ body {
 .topSection {
   position: relative;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   text-align: center;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -56,6 +56,15 @@ body {
   left: 0;
   align-items: center;
   /*arrow homebouncearrow end*/ }
+  .topSection .buildingsilo {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    top: 0px; }
   .topSection .topCtaHolder {
     position: absolute;
     max-width: 510px;
@@ -68,12 +77,6 @@ body {
     bottom: 0px;
     top: 0px;
     box-sizing: border-box; }
-  .topSection .buildingsilo {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    left: 0;
-    right: 0; }
   .topSection .topMainImg {
     position: relative;
     max-width: 190px;

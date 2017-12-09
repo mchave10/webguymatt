@@ -9,6 +9,7 @@ body {
     font-family: $main-font;
     font-size:16px;
     line-height: 21px;
+    overflow-y: hidden;
     
 }
 
@@ -24,6 +25,21 @@ body {
     background-color: $main-bgcolor; 
     color: $main-color;
     padding-top:5px;
+    
+.navbar-toggle {
+    background-color: transparent;
+    border:none;
+    
+    .icon-bar {
+    background-color: #FFFFFF;
+    }
+}
+        
+    
+.navbar-toggle:focus, .navbar-toggle:hover {
+    background-color: transparent;
+    border:none;
+}
     
     .logo {
         position: relative;
@@ -217,6 +233,11 @@ h1,h2 {
         }
     }
     .topSection {
+        .topCtaHolder {
+            .topMainImg {
+                max-width: 100px;   
+            }
+        }
         .scrollDwnFrmTop {
 
             img {

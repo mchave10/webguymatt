@@ -3,7 +3,8 @@ body {
   color: #FFFFFF;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 21px; }
+  line-height: 21px;
+  overflow-y: hidden; }
 
 .navbar {
   position: absolute;
@@ -17,6 +18,14 @@ body {
   background-color: #1a1a1a;
   color: #FFFFFF;
   padding-top: 5px; }
+  .navbar .navbar-toggle {
+    background-color: transparent;
+    border: none; }
+    .navbar .navbar-toggle .icon-bar {
+      background-color: #FFFFFF; }
+  .navbar .navbar-toggle:focus, .navbar .navbar-toggle:hover {
+    background-color: transparent;
+    border: none; }
   .navbar .logo {
     position: relative;
     max-width: 170px;
@@ -168,6 +177,8 @@ h1, h2 {
     padding-left: 10px;
     padding-bottom: 0px; }
 
+  .topSection .topCtaHolder .topMainImg {
+    max-width: 100px; }
   .topSection .scrollDwnFrmTop img {
     max-width: 50px; } }
 @media (max-width: 500px) {

@@ -23,7 +23,7 @@ $(document).ready(function(){
         }, 1000);     
         setTimeout(function(){
             $(".taxi").addClass("slideOutRight");  
-         }, 2200);     
+         }, 1500);     
         setTimeout(function(){
             $(".taxi").css("display","none"); 
             $(".aboutContent").fadeIn();

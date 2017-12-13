@@ -21,14 +21,14 @@ body {
 
 .navbar {
     position:absolute;
-    border:none;
     border-bottom: 1px solid #FFFFFF;
     border-radius: 0px;
+    border:none;
     left:0;
     right:0;
     text-align: center;
     z-index: 1200;
-    background-color: $main-bgcolor; 
+    background-color: transparent; 
     color: $main-color;
     padding-top:5px;
     height:56px;

@@ -1,25 +1,38 @@
 $(document).ready(function(){
-    function shakeTaxi() {
-        setTimeout(function(){
-            $(".taxi").addClass("shake bounce");   
-        }, 1000);     
-    }
-    function slideOutTaxi() {
-        setTimeout(function(){
-            $(".taxi").addClass("slideOutRight");  
-         }, 2200);     
-    }
-    $(".mattbouncearrow").click(function(){
+    $(window).on("scroll", function(){
+        console.log($(".navbar").height());
+        if($(this).scrollTop() > $(".navbar").height()) {
+            $(".navbar").addClass("stickynav pulse");
+        } 
+        else {
+            $(".navbar").removeClass("stickynav pulse");
+        }    
+    });
+    //About Me animations
+    $(".mattbouncearrow, .aboutmetoggle").click(function(){
         setTimeout(function(){
             $("html,body").css("overflow-y","visible");
         }, 100);  
-        var nextSection = $(this).parents().next('section')
-        nextSection.fadeIn();
-        $("html,body").delay(1000).animate({
-            scrollTop: nextSection.offset().top
+        $("#aboutMe").css("display","flex");
+        $("#aboutMe").removeClass("nunya");
+        $("html,body").animate({
+            scrollTop: $("#aboutMe").offset().top
         }, 500, 'swing');
-        shakeTaxi();                                               
-        slideOutTaxi();                          
-        slideIn
+        setTimeout(function(){
+            $(".taxi").addClass("shake bounce");   
+        }, 1000);     
+        setTimeout(function(){
+            $(".taxi").addClass("slideOutRight");  
+         }, 2200);     
+        setTimeout(function(){
+            $(".taxi").addClass("slideOutRight");  
+         }, 2200);    
+        setTimeout(function(){
+            $(".aboutContent").fadeIn();
+            
+         }, 2200);    
+        
+        return false;
+        
     });
 });

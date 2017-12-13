@@ -7,6 +7,11 @@ body {
   overflow-y: hidden;
   overflow-x: hidden; }
 
+.navbar.stickynav {
+  position: fixed;
+  top: 0;
+  animation: pulse 0.4s; }
+
 .navbar {
   position: absolute;
   border: none;
@@ -18,7 +23,8 @@ body {
   z-index: 1200;
   background-color: #1a1a1a;
   color: #FFFFFF;
-  padding-top: 5px; }
+  padding-top: 5px;
+  height: 56px; }
   .navbar .navbar-toggle {
     background-color: transparent;
     border: none; }
@@ -64,6 +70,7 @@ body {
   right: 0;
   left: 0;
   align-items: center;
+  justify-content: center;
   /*arrow homebouncearrow end*/ }
   .topSection .buildingsilo {
     position: absolute;
@@ -75,17 +82,21 @@ body {
     bottom: 20%;
     top: 0px; }
   .topSection .topCtaHolder {
-    position: absolute;
+    position: relative;
     max-width: 510px;
     width: 80%;
-    height: 63%;
     padding: 10px;
     margin: auto;
     left: 0;
     right: 0;
     bottom: 0px;
     top: 0px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
   .topSection .topMainImg {
     position: relative;
     max-width: 190px;
@@ -152,6 +163,9 @@ body {
     -ms-transform: translateY(8px);
     -o-transform: translateY(8px);
     transform: translateY(8px); } }
+#aboutMe.nunya {
+  display: none; }
+
 #aboutMe {
   position: relative;
   width: 100%;
@@ -168,7 +182,7 @@ body {
   right: 0;
   left: 0;
   align-items: center;
-  display: none; }
+  justify-content: center; }
   #aboutMe .taxi {
     position: absolute;
     top: 0;
@@ -177,7 +191,30 @@ body {
     bottom: 0;
     margin: auto;
     max-width: 1200px;
-    width: 90%; }
+    width: 90%;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  #aboutMe .aboutContent {
+    position: relative;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    flex-direction: column;
+    display: none; }
+    #aboutMe .aboutContent h4 {
+      font-size: 2.8em;
+      line-height: 1.8em; }
+    #aboutMe .aboutContent p {
+      font-size: 1.8em;
+      line-height: 1.2em; }
 
 h1, h2 {
   position: relative;
@@ -198,6 +235,10 @@ h1, h2 {
     font-size: 12px;
     line-height: 16px; } }
 @media (max-width: 767px) {
+  body {
+    font-size: 11px;
+    line-height: 14px; }
+
   .navbar .logo {
     max-width: 200px;
     float: left;

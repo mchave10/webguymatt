@@ -27,7 +27,9 @@ $(document).ready(function(){
         setTimeout(function(){
             $(".taxi").addClass("slideOutRight");  
          }, 2200);    
+            
         setTimeout(function(){
+            $(".taxi").css("display","none"); 
             $(".aboutContent").fadeIn();
             
          }, 2200);    
